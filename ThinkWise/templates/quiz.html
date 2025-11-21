@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ subject|capitalize }} Study Materials - ThinkWise</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <style>
+        /* Additional styles specific to the study materials page */
+        .subject-header {
+            text-align: center;
+            padding: 2rem 0;
+            background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-primary) 100%);
+            margin-bottom: 2rem;
+        }
+        
+        .subject-icon {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+            display: block;
+        }
+        
+        .resources-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+        
+        .resource-card {
+            background-color: var(--card-bg);
+            border-radius: 0.75rem;
+            padding: 1.5rem;
+            box-shadow: var(--shadow);
+            border: 1px solid var(--border-color);
+            transition: var(--transition);
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .resource-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-lg);
+            border-color: var(--primary);
+        }
+        
+        .resource-icon {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+        
+        .resource-title {
+            font-size: 1.25rem;
+            margin-bottom: 0.5rem;
+            color: var(--text-primary);
+        }
+        
+        .resource-description {
+            color: var(--text-secondary);
+            font-size: 0.875rem;
+            margin-bottom: 1rem;
+            flex-grow: 1;
+        }
+        
+        .resource-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: auto;
+            font-size: 0.75rem;
+            color: var(--text-muted);
+        }
+        
+        .resource-tag {
+            background-color: var(--bg-tertiary);
+            padding: 0.25rem 0.5rem;
+            border-radius: 1rem;
+        }
+        
+        .progress-section {
+            background-color: var(--card-bg);
+            border-radius: 0.75rem;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            box-shadow: var(--shadow);
+        }
+        
+        .progress-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+        
+        .progress-stats {
+            display: flex;
+            gap: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .stat {
+            text-align: center;
+        }
+        
+        .stat-value {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--primary);
+        }
+        
+        .stat-label {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+        }
+        
+        .progress-bar-container {
+            width: 100%;
+            height: 8px;
+            background-color: var(--bg-tertiary);
+            border-radius: 4px;
+            overflow: hidden;
+            margin: 1rem 0;
+        }
+        
+        .progress-bar-fill {
+            height: 100%;
+            background: linear-gradient(90deg, var(--primary), var(--success));
+            border-radius: 4px;
+            transition: width 0.5s ease-in-out;
+        }
+        
+        .action-buttons {
+            display: flex;
+            gap: 1rem;
+            margin: 2rem 0;
+            flex-wrap: wrap;
+        }
+        
+        .action-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.75rem 1.5rem;
+            background-color: var(--primary);
+            color: white;
+            text-decoration: none;
+            border-radius: 0.5rem;
+            font-weight: 500;
+            transition: var(--transition);
+        }
+        
+        .action-button:hover {
+            background-color: var(--primary-hover);
+            transform: translateY(-2px);
+        }
+        
+        .action-button.secondary {
+            background-color: var(--bg-tertiary);
+            color: var(--text-primary);
+        }
+        
+        .action-button.secondary:hover {
+            background-color: var(--border-color);
+        }
+        
+        .recent-activity {
+            background-color: var(--card-bg);
+            border-radius: 0.75rem;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            box-shadow: var(--shadow);
+        }
+        
+        .activity-list {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .activity-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 1rem 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+        
+        .activity-item:last-child {
+            border-bottom: none;
+        }
+        
+        .activity-icon {
+            width: 2.5rem;
+            height: 2.5rem;
+            border-radius: 50%;
+            background-color: var(--bg-tertiary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1rem;
+        }
+        
+        .activity-content {
+            flex-grow: 1;
+        }
+        
+        .activity-title {
+            font-weight: 500;
+            margin-bottom: 0.25rem;
+        }
+        
+        .activity-time {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+        }
+        
+        .navigation {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 2rem;
+            padding-top: 2rem;
+            border-top: 1px solid var(--border-color);
+        }
+        
+        .nav-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.75rem 1.5rem;
+            background-color: var(--bg-tertiary);
+            color: var(--text-primary);
+            text-decoration: none;
+            border-radius: 0.5rem;
+            transition: var(--transition);
+        }
+        
+        .nav-button:hover {
+            background-color: var(--border-color);
+        }
+        
+        /* Subject-specific icons and colors */
+        .math-icon { color: #4361ee; }
+        .science-icon { color: #4cc9f0; }
+        .programming-icon { color: #7209b7; }
+        .history-icon { color: #f72585; }
+        
+        @media (max-width: 768px) {
+            .resources-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .action-buttons {
+                flex-direction: column;
+            }
+            
+            .action-button {
+                justify-content: center;
+            }
+            
+            .progress-stats {
+                flex-wrap: wrap;
+                justify-content: space-around;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="app-container">
+        <!-- Header -->
+        <header class="header" role="banner">
+            <nav class="nav container" aria-label="Main navigation">
+                <a href="/" class="logo" aria-label="ThinkWise Home">
+                    <span class="logo-icon">🧠</span>
+                    ThinkWise
+                </a>
+                
+                <div class="nav-controls">
+                    <button class="theme-toggle" aria-label="Toggle dark mode">
+                        🌙 Dark Mode
+                    </button>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content" role="main">
+            <!-- Subject Header -->
+            <section class="subject-header">
+                <div class="container">
+                    <span class="subject-icon {{ subject }}-icon">
+                        {% if subject == 'math' %}∫
+                        {% elif subject == 'science' %}🔬
+                        {% elif subject == 'programming' %}💻
+                        {% elif subject == 'history' %}📜
+                        {% else %}📚{% endif %}
+                    </span>
+                    <h1>{{ subject|capitalize }} Study Materials</h1>
+                    <p>Everything you need to master {{ subject }}</p>
+                </div>
+            </section>
+
+            <div class="container">
+                <!-- Progress Section -->
+                <section class="progress-section" aria-labelledby="progress-title">
+                    <div class="progress-header">
+                        <h2 id="progress-title">Your Learning Progress</h2>
+                        <span class="progress-percentage">{{ progress }}% Mastered</span>
+                    </div>
+                    
+                    <div class="progress-stats">
+                        <div class="stat">
+                            <div class="stat-value">12</div>
+                            <div class="stat-label">Topics Studied</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-value">8</div>
+                            <div class="stat-label">Quizzes Completed</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-value">15</div>
+                            <div class="stat-label">Study Hours</div>
+                        </div>
+                    </div>
+                    
+                    <div class="progress-bar-container">
+                        <div class="progress-bar-fill" data-progress="{{ progress }}" aria-label="{{ progress }} percent mastered"></div>
+                    </div>
+                    
+                    <p>Keep going! You're making great progress in {{ subject }}.</p>
+                </section>
+
+                <!-- Action Buttons -->
+                <div class="action-buttons">
+                    <a href="/quiz/{{ subject }}" class="action-button">
+                        🧠 Take a Quiz
+                    </a>
+                    <a href="/breakdown/{{ subject }}" class="action-button secondary">
+                        🔍 Concept Breakdown
+                    </a>
+                    <a href="/notes/{{ subject }}" class="action-button secondary">
+                        📝 Generate Notes
+                    </a>
+                    <a href="/study-session/{{ subject }}" class="action-button secondary">
+                        ⏱️ Start Study Session
+                    </a>
+                </div>
+
+                <!-- Resources Grid -->
+                <section class="resources-section" aria-labelledby="resources-title">
+                    <h2 id="resources-title">Learning Resources</h2>
+                    <p>Curated materials to help you master {{ subject }}</p>
+                    
+                    <div class="resources-grid">
+                        <!-- Resource 1 -->
+                        <div class="resource-card">
+                            <div class="resource-icon">📖</div>
+                            <h3 class="resource-title">Core Concepts</h3>
+                            <p class="resource-description">
+                                Fundamental principles and theories you need to understand {{ subject }}.
+                            </p>
+                            <div class="resource-meta">
+                                <span class="resource-tag">Essential</span>
+                                <span>45 min</span>
+                            </div>
+                        </div>
+                        
+                        <!-- Resource 2 -->
+                        <div class="resource-card">
+                            <div class="resource-icon">🎥</div>
+                            <h3 class="resource-title">Video Explanations</h3>
+                            <p class="resource-description">
+                                Visual explanations of complex topics with real-world examples.
+                            </p>
+                            <div class="resource-meta">
+                                <span class="resource-tag">Visual</span>
+                                <span>6 videos</span>
+                            </div>
+                        </div>
+                        
+                        <!-- Resource 3 -->
+                        <div class="resource-card">
+                            <div class="resource-icon">🔄</div>
+                            <h3 class="resource-title">Practice Problems</h3>
+                            <p class="resource-description">
+                                Hands-on exercises to reinforce your understanding and build skills.
+                            </p>
+                            <div class="resource-meta">
+                                <span class="resource-tag">Interactive</span>
+                                <span>24 problems</span>
+                            </div>
+                        </div>
+                        
+                        <!-- Resource 4 -->
+                        <div class="resource-card">
+                            <div class="resource-icon">📊</div>
+                            <h3 class="resource-title">Advanced Topics</h3>
+                            <p class="resource-description">
+                                Deeper dive into specialized areas for those who want to excel.
+                            </p>
+                            <div class="resource-meta">
+                                <span class="resource-tag">Advanced</span>
+                                <span>2 hours</span>
+                            </div>
+                        </div>
+                        
+                        <!-- Resource 5 -->
+                        <div class="resource-card">
+                            <div class="resource-icon">🧩</div>
+                            <h3 class="resource-title">Real-World Applications</h3>
+                            <p class="resource-description">
+                                How {{ subject }} concepts apply in industry, research, and daily life.
+                            </p>
+                            <div class="resource-meta">
+                                <span class="resource-tag">Practical</span>
+                                <span>8 case studies</span>
+                            </div>
+                        </div>
+                        
+                        <!-- Resource 6 -->
+                        <div class="resource-card">
+                            <div class="resource-icon">📋</div>
+                            <h3 class="resource-title">Exam Preparation</h3>
+                            <p class="resource-description">
+                                Tips, strategies, and practice tests to ace your {{ subject }} exams.
+                            </p>
+                            <div class="resource-meta">
+                                <span class="resource-tag">Test Prep</span>
+                                <span>3 practice tests</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Recent Activity -->
+                <section class="recent-activity" aria-labelledby="activity-title">
+                    <h2 id="activity-title">Recent Activity</h2>
+                    <ul class="activity-list">
+                        <li class="activity-item">
+                            <div class="activity-icon">🧠</div>
+                            <div class="activity-content">
+                                <div class="activity-title">Completed Quiz: {{ subject|capitalize }} Fundamentals</div>
+                                <div class="activity-time">2 hours ago • Score: 85%</div>
+                            </div>
+                        </li>
+                        <li class="activity-item">
+                            <div class="activity-icon">📝</div>
+                            <div class="activity-content">
+                                <div class="activity-title">Generated study notes for 3 topics</div>
+                                <div class="activity-time">Yesterday</div>
+                            </div>
+                        </li>
+                        <li class="activity-item">
+                            <div class="activity-icon">🔍</div>
+                            <div class="activity-content">
+                                <div class="activity-title">Viewed concept breakdown: Advanced {{ subject }}</div>
+                                <div class="activity-time">2 days ago</div>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+
+                <!-- Navigation -->
+                <div class="navigation">
+                    <a href="/" class="nav-button">
+                        ← Back to Home
+                    </a>
+                    <a href="/study/{{ next_subject }}" class="nav-button">
+                        Next Subject →
+                    </a>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer" role="contentinfo">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-section">
+                        <h3>ThinkWise</h3>
+                        <p>Making learning accessible and effective for every student.</p>
+                    </div>
+                </div>
+                
+                <div class="footer-bottom">
+                    <p>&copy; 2024 ThinkWise. Making learning smarter.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        // Theme management
+        class ThemeManager {
+            constructor() {
+                this.theme = localStorage.getItem('thinkwise-theme') || 'light';
+                this.init();
+            }
+
+            init() {
+                this.applyTheme(this.theme);
+                this.bindEvents();
+            }
+
+            applyTheme(theme) {
+                document.documentElement.setAttribute('data-theme', theme);
+                localStorage.setItem('thinkwise-theme', theme);
+                this.updateToggleButton(theme);
+            }
+
+            toggleTheme() {
+                this.theme = this.theme === 'light' ? 'dark' : 'light';
+                this.applyTheme(this.theme);
+            }
+
+            updateToggleButton(theme) {
+                const button = document.querySelector('.theme-toggle');
+                if (button) {
+                    const icon = theme === 'dark' ? '☀️' : '🌙';
+                    const text = theme === 'dark' ? 'Light Mode' : 'Dark Mode';
+                    button.innerHTML = `${icon} ${text}`;
+                }
+            }
+
+            bindEvents() {
+                const toggleButton = document.querySelector('.theme-toggle');
+                if (toggleButton) {
+                    toggleButton.addEventListener('click', () => this.toggleTheme());
+                }
+            }
+        }
+
+        // Initialize theme manager when DOM loads
+        document.addEventListener('DOMContentLoaded', () => {
+            new ThemeManager();
+            
+            // Add subtle animation to progress bar using data attribute to avoid template syntax inside inline CSS
+            const progressBar = document.querySelector('.progress-bar-fill');
+            if (progressBar) {
+                // Get the target width from data attribute (set by template) and append percent sign
+                const target = progressBar.dataset.progress;
+                const targetWidth = (typeof target !== 'undefined' && target !== '') ? `${target}%` : '0%';
+                // Reset to 0 for animation
+                progressBar.style.width = '0%';
+                // Animate to the actual width after a short delay
+                setTimeout(() => {
+                    progressBar.style.width = targetWidth;
+                    // Update aria-label for assistive tech
+                    progressBar.setAttribute('aria-label', `${target} percent mastered`);
+                }, 300);
+            }
+        });
+    </script>
+</body>
+</html>

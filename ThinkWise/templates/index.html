@@ -1,0 +1,1114 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ThinkWise - AI-Powered Learning Companion</title>
+  <meta name="description" content="Transform complex topics into simple, understandable explanations with AI-powered learning tools">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <style>
+    /* Advanced Animations and Enhanced Styles */
+    :root {
+      --primary-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      --success-gradient: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+      --warning-gradient: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+      --glass-bg: rgba(255, 255, 255, 0.1);
+      --glass-border: rgba(255, 255, 255, 0.2);
+      --neon-glow: 0 0 20px rgba(102, 126, 234, 0.4);
+    }
+
+    [data-theme="dark"] {
+      --glass-bg: rgba(0, 0, 0, 0.2);
+      --glass-border: rgba(255, 255, 255, 0.1);
+    }
+
+    /* Advanced Animations */
+    @keyframes float {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-10px); }
+    }
+
+    @keyframes glow {
+      0%, 100% { box-shadow: 0 0 5px rgba(102, 126, 234, 0.5); }
+      50% { box-shadow: 0 0 20px rgba(102, 126, 234, 0.8); }
+    }
+
+    @keyframes slideInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes typewriter {
+      from { width: 0; }
+      to { width: 100%; }
+    }
+
+    /* Enhanced Components */
+    .glass-card {
+      background: var(--glass-bg);
+      backdrop-filter: blur(10px);
+      border: 1px solid var(--glass-border);
+      border-radius: 20px;
+    }
+
+    .neon-glow {
+      animation: glow 2s ease-in-out infinite;
+    }
+
+    .floating {
+      animation: float 3s ease-in-out infinite;
+    }
+
+    /* Enhanced Hero Section */
+    .hero-section {
+      position: relative;
+      overflow: hidden;
+      background: var(--primary-gradient);
+      color: white;
+      padding: 6rem 0;
+    }
+
+    .hero-section::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: 
+        radial-gradient(circle at 20% 80%, rgba(120, 119, 198, 0.3) 0%, transparent 50%),
+        radial-gradient(circle at 80% 20%, rgba(255, 119, 198, 0.3) 0%, transparent 50%),
+        radial-gradient(circle at 40% 40%, rgba(120, 219, 255, 0.2) 0%, transparent 50%);
+    }
+
+    .hero-title {
+      font-size: 4rem;
+      font-weight: 800;
+      margin-bottom: 1.5rem;
+      background: linear-gradient(135deg, #fff 0%, #f0f0f0 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      position: relative;
+    }
+
+    .hero-subtitle {
+      font-size: 1.5rem;
+      margin-bottom: 3rem;
+      opacity: 0.9;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    /* Enhanced Quick Action Card */
+    .quick-action-card {
+      background: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(20px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 20px;
+      padding: 3rem;
+      max-width: 800px;
+      margin: 0 auto;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .quick-action-card::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+      animation: float 6s ease-in-out infinite;
+    }
+
+    /* Enhanced Input Groups */
+    .input-group {
+      position: relative;
+      margin-bottom: 2rem;
+    }
+
+    .input-label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: 600;
+      color: rgba(255, 255, 255, 0.9);
+    }
+
+    .input-field {
+      width: 100%;
+      padding: 1rem 1.5rem;
+      background: rgba(255, 255, 255, 0.1);
+      border: 2px solid rgba(255, 255, 255, 0.2);
+      border-radius: 12px;
+      color: white;
+      font-size: 1rem;
+      transition: all 0.3s ease;
+    }
+
+    .input-field:focus {
+      outline: none;
+      border-color: rgba(255, 255, 255, 0.5);
+      background: rgba(255, 255, 255, 0.15);
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+    }
+
+    .input-field::placeholder {
+      color: rgba(255, 255, 255, 0.6);
+    }
+
+    /* Enhanced Submit Button */
+    .submit-button {
+      background: var(--success-gradient);
+      border: none;
+      padding: 1.2rem 2.5rem;
+      border-radius: 12px;
+      color: white;
+      font-weight: 600;
+      font-size: 1.1rem;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .submit-button::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+      transition: left 0.5s;
+    }
+
+    .submit-button:hover::before {
+      left: 100%;
+    }
+
+    .submit-button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 25px rgba(79, 172, 254, 0.4);
+    }
+
+    /* Enhanced Features Section */
+    .features-section {
+      padding: 6rem 0;
+      background: var(--bg-secondary);
+    }
+
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+
+    .feature-card {
+      background: var(--card-bg);
+      padding: 2.5rem;
+      border-radius: 16px;
+      text-align: center;
+      transition: all 0.3s ease;
+      border: 1px solid var(--border-color);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .feature-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: var(--primary-gradient);
+    }
+
+    .feature-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Advanced Results Section */
+    .results-container {
+      padding: 4rem 0;
+      background: var(--bg-primary);
+    }
+
+    .concept-breakdown {
+      background: var(--card-bg);
+      border-radius: 20px;
+      padding: 3rem;
+      margin-top: 2rem;
+      border: 1px solid var(--border-color);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    }
+
+    .concept-section {
+      margin-bottom: 3rem;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .concept-section:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+    }
+
+    .section-title {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      color: var(--primary);
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    /* AI Thinking Animation */
+    .ai-thinking {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      padding: 2rem;
+    }
+
+    .thinking-dots {
+      display: flex;
+      gap: 0.5rem;
+    }
+
+    .thinking-dot {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: var(--primary);
+      animation: thinking 1.4s ease-in-out infinite both;
+    }
+
+    .thinking-dot:nth-child(1) { animation-delay: -0.32s; }
+    .thinking-dot:nth-child(2) { animation-delay: -0.16s; }
+
+    @keyframes thinking {
+      0%, 80%, 100% { transform: scale(0); }
+      40% { transform: scale(1); }
+    }
+
+    /* Advanced Interactive Elements */
+    .interactive-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.5rem 1rem;
+      background: var(--bg-tertiary);
+      border-radius: 20px;
+      font-size: 0.875rem;
+      font-weight: 500;
+      margin: 0.25rem;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .interactive-badge:hover {
+      background: var(--primary);
+      color: white;
+      transform: translateY(-1px);
+    }
+
+    /* Progress Visualization */
+    .progress-ring {
+      position: relative;
+      width: 80px;
+      height: 80px;
+    }
+
+    .progress-ring-circle {
+      transform: rotate(-90deg);
+      transform-origin: 50% 50%;
+    }
+
+    /* Advanced Navigation */
+    .nav-controls {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .user-avatar {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: var(--primary-gradient);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    /* Mobile Optimizations */
+    @media (max-width: 768px) {
+      .hero-title {
+        font-size: 2.5rem;
+      }
+
+      .hero-subtitle {
+        font-size: 1.2rem;
+      }
+
+      .quick-action-card {
+        padding: 2rem;
+        margin: 0 1rem;
+      }
+
+      .features-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .concept-breakdown {
+        padding: 2rem;
+        margin: 1rem;
+      }
+    }
+
+    /* Dark mode specific enhancements */
+    [data-theme="dark"] .hero-section {
+      background: linear-gradient(135deg, #2d3748 0%, #4a5568 100%);
+    }
+
+    [data-theme="dark"] .quick-action-card {
+      background: rgba(0, 0, 0, 0.3);
+    }
+
+    [data-theme="dark"] .feature-card:hover {
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    }
+  </style>
+</head>
+<body>
+  <div class="app-container">
+    <!-- Enhanced Header -->
+    <header class="header">
+      <nav class="nav container">
+        <a href="/" class="logo">
+          <div class="logo-icon">🧠</div>
+          ThinkWise
+        </a>
+        
+        <div class="nav-controls">
+          <!-- Session Timer -->
+          <div class="session-timer" id="session-timer">
+            <span>🕒</span>
+            <span id="timer-display">00:00</span>
+          </div>
+          
+          <!-- Theme Toggle -->
+          <button class="theme-toggle" aria-label="Toggle theme">
+            <span class="theme-icon">🌙</span>
+            <span class="theme-text">Dark Mode</span>
+          </button>
+          
+          <!-- User Avatar -->
+          <div class="user-avatar" id="user-avatar" title="Guest User">
+            G
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main-content">
+      <!-- Enhanced Hero Section -->
+      <section class="hero-section">
+        <div class="container">
+          <h1 class="hero-title">
+            <span class="typewriter-text">Learn Smarter, Not Harder</span>
+          </h1>
+          <p class="hero-subtitle">
+            Transform complex topics into simple, understandable explanations with AI-powered learning tools, personalized study plans, and interactive content.
+          </p>
+
+          <!-- Enhanced Quick Action Card -->
+          <div class="quick-action-card glass-card">
+            <form id="concept-form" class="input-form" aria-label="Break down a concept">
+              <div class="input-group">
+                <label for="topic-input" class="input-label">
+                  <span>🎯</span>
+                  What do you want to learn?
+                </label>
+                <div style="position: relative;">
+                  <input 
+                    id="topic-input" 
+                    class="input-field" 
+                    type="text" 
+                    placeholder="e.g., Quantum Physics, Machine Learning, Calculus..." 
+                    autocomplete="off"
+                  />
+                  <button type="button" class="voice-input-btn" id="voice-input-btn" aria-label="Voice input">
+                    🎤
+                  </button>
+                </div>
+                <!-- Suggestions Panel -->
+                <div class="suggestions-panel hidden" id="suggestions-panel"></div>
+              </div>
+
+              <div class="input-group">
+                <label for="complexity-select" class="input-label">
+                  <span>📊</span>
+                  Difficulty Level
+                </label>
+                <select id="complexity-select" class="input-field select-field">
+                  <option value="beginner">🎓 Beginner - New to the topic</option>
+                  <option value="intermediate">📈 Intermediate - Some knowledge</option>
+                  <option value="advanced">🚀 Advanced - Deep understanding</option>
+                </select>
+              </div>
+
+              <div class="input-group">
+                <label for="learning-style-select" class="input-label">
+                  <span>🎨</span>
+                  Learning Style
+                </label>
+                <select id="learning-style-select" class="input-field select-field">
+                  <option value="visual">👁️ Visual Learner</option>
+                  <option value="auditory">👂 Auditory Learner</option>
+                  <option value="kinesthetic">✋ Hands-on Learner</option>
+                  <option value="reading">📖 Reading/Writing Learner</option>
+                </select>
+              </div>
+
+              <button type="submit" class="submit-button">
+                <span class="button-text">🚀 Break It Down with AI</span>
+                <span class="spinner hidden" aria-hidden="true">
+                  <div class="thinking-dots">
+                    <div class="thinking-dot"></div>
+                    <div class="thinking-dot"></div>
+                    <div class="thinking-dot"></div>
+                  </div>
+                </span>
+              </button>
+            </form>
+
+            <!-- Quick Topics -->
+            <div class="quick-topics">
+              <p style="text-align: center; margin-top: 1.5rem; opacity: 0.8; font-size: 0.9rem;">
+                Try: 
+                <span class="interactive-badge" data-topic="Photosynthesis">🌿 Photosynthesis</span>
+                <span class="interactive-badge" data-topic="Machine Learning">🤖 Machine Learning</span>
+                <span class="interactive-badge" data-topic="Ancient Rome">🏛️ Ancient Rome</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Enhanced Results Section -->
+      <section id="results-section" class="results-container hidden">
+        <div class="container">
+          <div class="results-header" style="text-align: center; margin-bottom: 3rem;">
+            <h2 style="font-size: 2.5rem; margin-bottom: 1rem;">Your AI-Powered Breakdown</h2>
+            <p style="font-size: 1.1rem; color: var(--text-secondary); max-width: 600px; margin: 0 auto;">
+              Tailored to your learning style and complexity level
+            </p>
+          </div>
+          
+          <div id="concept-results"></div>
+          
+          <!-- Results Actions -->
+          <div class="results-actions" style="text-align: center; margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--border-color);">
+            <button class="action-button" id="export-breakdown">📥 Export Breakdown</button>
+            <button class="action-button secondary" id="generate-quiz">🧠 Generate Quiz</button>
+            <button class="action-button secondary" id="save-notes">💾 Save to Notes</button>
+            <button class="action-button secondary" id="share-breakdown">🔗 Share</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Enhanced Features Section -->
+      <section class="features-section">
+        <div class="container">
+          <div style="text-align: center; margin-bottom: 4rem;">
+            <h2 style="font-size: 2.5rem; margin-bottom: 1rem;">How ThinkWise Transforms Learning</h2>
+            <p style="font-size: 1.2rem; color: var(--text-secondary); max-width: 700px; margin: 0 auto;">
+              Experience the future of education with our AI-powered learning ecosystem
+            </p>
+          </div>
+
+          <div class="features-grid">
+            <article class="feature-card glass-card">
+              <div style="font-size: 3rem; margin-bottom: 1.5rem;">🔍</div>
+              <h3 style="font-size: 1.5rem; margin-bottom: 1rem;">Smart Concept Breakdown</h3>
+              <p style="color: var(--text-secondary); line-height: 1.6;">
+                Transform complex topics into digestible explanations with real-life analogies, step-by-step guides, and personalized learning paths.
+              </p>
+              <ul style="text-align: left; margin-top: 1.5rem; color: var(--text-secondary);">
+                <li>AI-powered explanations</li>
+                <li>Visual learning aids</li>
+                <li>Progress tracking</li>
+              </ul>
+            </article>
+
+            <article class="feature-card glass-card">
+              <div style="font-size: 3rem; margin-bottom: 1.5rem;">✏️</div>
+              <h3 style="font-size: 1.5rem; margin-bottom: 1rem;">Exam-Style Solver</h3>
+              <p style="color: var(--text-secondary); line-height: 1.6;">
+                Get step-by-step solutions to exam questions with teacher-level explanations, common mistakes, and verification techniques.
+              </p>
+              <ul style="text-align: left; margin-top: 1.5rem; color: var(--text-secondary);">
+                <li>Step-by-step solutions</li>
+                <li>Common mistakes highlighted</li>
+                <li>Multiple solving methods</li>
+              </ul>
+            </article>
+
+            <article class="feature-card glass-card">
+              <div style="font-size: 3rem; margin-bottom: 1.5rem;">📝</div>
+              <h3 style="font-size: 1.5rem; margin-bottom: 1rem;">Smart Notes Generator</h3>
+              <p style="color: var(--text-secondary); line-height: 1.6;">
+                Convert lectures, PDFs, and videos into organized study notes, flashcards, and one-page summaries automatically.
+              </p>
+              <ul style="text-align: left; margin-top: 1.5rem; color: var(--text-secondary);">
+                <li>Auto-summarization</li>
+                <li>Flashcard generation</li>
+                <li>Multi-format support</li>
+              </ul>
+            </article>
+
+            <article class="feature-card glass-card">
+              <div style="font-size: 3rem; margin-bottom: 1.5rem;">🧠</div>
+              <h3 style="font-size: 1.5rem; margin-bottom: 1rem;">Adaptive Memory Trainer</h3>
+              <p style="color: var(--text-secondary); line-height: 1.6;">
+                Intelligent quizzes with spaced repetition that adapt to your learning pace and focus on your weak areas.
+              </p>
+              <ul style="text-align: left; margin-top: 1.5rem; color: var(--text-secondary);">
+                <li>Spaced repetition</li>
+                <li>Personalized difficulty</li>
+                <li>Progress analytics</li>
+              </ul>
+            </article>
+
+            <article class="feature-card glass-card">
+              <div style="font-size: 3rem; margin-bottom: 1.5rem;">🎯</div>
+              <h3 style="font-size: 1.5rem; margin-bottom: 1rem;">Learning Analytics</h3>
+              <p style="color: var(--text-secondary); line-height: 1.6;">
+                Track your learning journey with detailed analytics, personalized recommendations, and progress insights.
+              </p>
+              <ul style="text-align: left; margin-top: 1.5rem; color: var(--text-secondary);">
+                <li>Progress tracking</li>
+                <li>Weakness detection</li>
+                <li>Study recommendations</li>
+              </ul>
+            </article>
+
+            <article class="feature-card glass-card">
+              <div style="font-size: 3rem; margin-bottom: 1.5rem;">🤖</div>
+              <h3 style="font-size: 1.5rem; margin-bottom: 1rem;">AI Study Assistant</h3>
+              <p style="color: var(--text-secondary); line-height: 1.6;">
+                24/7 AI tutor that answers questions, provides explanations, and guides your learning journey.
+              </p>
+              <ul style="text-align: left; margin-top: 1.5rem; color: var(--text-secondary);">
+                <li>24/7 availability</li>
+                <li>Instant explanations</li>
+                <li>Personalized guidance</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Stats Section -->
+      <section class="stats-section" style="background: var(--primary-gradient); color: white; padding: 4rem 0;">
+        <div class="container">
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem; text-align: center;">
+            <div class="stat-item">
+              <div style="font-size: 3rem; font-weight: 700; margin-bottom: 0.5rem;">10K+</div>
+              <div style="opacity: 0.9;">Concepts Mastered</div>
+            </div>
+            <div class="stat-item">
+              <div style="font-size: 3rem; font-weight: 700; margin-bottom: 0.5rem;">95%</div>
+              <div style="opacity: 0.9;">Learning Efficiency</div>
+            </div>
+            <div class="stat-item">
+              <div style="font-size: 3rem; font-weight: 700; margin-bottom: 0.5rem;">24/7</div>
+              <div style="opacity: 0.9;">AI Tutor Available</div>
+            </div>
+            <div class="stat-item">
+              <div style="font-size: 3rem; font-weight: 700; margin-bottom: 0.5rem;">∞</div>
+              <div style="opacity: 0.9;">Learning Possibilities</div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- AI Study Assistant Chat -->
+    <div class="ai-assistant" id="ai-assistant">
+      <button class="assistant-toggle" id="assistant-toggle">
+        <span class="assistant-icon">🤖</span>
+      </button>
+      
+      <div class="assistant-window hidden" id="assistant-window">
+        <div class="assistant-header">
+          <h3>AI Study Assistant</h3>
+          <button class="assistant-close" id="assistant-close">×</button>
+        </div>
+        <div class="assistant-messages" id="assistant-messages">
+          <div class="message bot-message">
+            <p>Hi! I'm your ThinkWise AI assistant. I can help explain concepts, answer questions, or guide your learning. What would you like to know? 🎓</p>
+          </div>
+        </div>
+        <div class="assistant-input">
+          <input type="text" id="assistant-input" placeholder="Ask me anything...">
+          <button id="assistant-send">➤</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Enhanced JavaScript -->
+  <script src="{{ url_for('static', filename='theme.js') }}"></script>
+  <script>
+    // Enhanced ThinkWise Application
+    class ThinkWiseApp {
+      constructor() {
+        this.state = {
+          currentSession: null,
+          breakdownHistory: [],
+          userPreferences: {},
+          isAssistantOpen: false,
+          voiceRecognition: null,
+          sessionStartTime: null
+        };
+        
+        this.init();
+      }
+
+      init() {
+        this.setupEventListeners();
+        this.loadUserPreferences();
+        this.startSessionTimer();
+        this.setupVoiceRecognition();
+        this.setupTypewriterEffect();
+      }
+
+      setupEventListeners() {
+        // Concept form
+        const conceptForm = document.getElementById('concept-form');
+        if (conceptForm) {
+          conceptForm.addEventListener('submit', (e) => this.handleConceptBreakdown(e));
+        }
+
+        // Quick topic badges
+        document.querySelectorAll('.interactive-badge').forEach(badge => {
+          badge.addEventListener('click', () => {
+            const topic = badge.getAttribute('data-topic');
+            document.getElementById('topic-input').value = topic;
+            conceptForm.dispatchEvent(new Event('submit'));
+          });
+        });
+
+        // Assistant toggle
+        const assistantToggle = document.getElementById('assistant-toggle');
+        const assistantClose = document.getElementById('assistant-close');
+        const assistantSend = document.getElementById('assistant-send');
+        
+        if (assistantToggle) {
+          assistantToggle.addEventListener('click', () => this.toggleAssistant());
+        }
+        if (assistantClose) {
+          assistantClose.addEventListener('click', () => this.toggleAssistant());
+        }
+        if (assistantSend) {
+          assistantSend.addEventListener('click', () => this.sendAssistantMessage());
+        }
+
+        // Voice input
+        const voiceBtn = document.getElementById('voice-input-btn');
+        if (voiceBtn) {
+          voiceBtn.addEventListener('click', () => this.toggleVoiceInput());
+        }
+
+        // Real-time suggestions
+        const topicInput = document.getElementById('topic-input');
+        if (topicInput) {
+          topicInput.addEventListener('input', () => this.handleTopicInput());
+        }
+
+        // Results actions
+        const exportBtn = document.getElementById('export-breakdown');
+        const quizBtn = document.getElementById('generate-quiz');
+        const notesBtn = document.getElementById('save-notes');
+        const shareBtn = document.getElementById('share-breakdown');
+
+        if (exportBtn) exportBtn.addEventListener('click', () => this.exportBreakdown());
+        if (quizBtn) quizBtn.addEventListener('click', () => this.generateQuiz());
+        if (notesBtn) notesBtn.addEventListener('click', () => this.saveToNotes());
+        if (shareBtn) shareBtn.addEventListener('click', () => this.shareBreakdown());
+      }
+
+      async handleConceptBreakdown(event) {
+        event.preventDefault();
+        
+        const topic = document.getElementById('topic-input').value.trim();
+        const complexity = document.getElementById('complexity-select').value;
+        const learningStyle = document.getElementById('learning-style-select').value;
+
+        if (!topic) {
+          this.showNotification('Please enter a topic to break down', 'warning');
+          return;
+        }
+
+        this.setLoadingState(true);
+
+        try {
+          const response = await fetch('/api/v1/breakdown', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+              topic,
+              complexity,
+              learning_style: learningStyle
+            })
+          });
+
+          const data = await response.json();
+
+          if (!response.ok) {
+            throw new Error(data.error || 'Failed to generate breakdown');
+          }
+
+          if (data.success) {
+            this.renderConceptBreakdown(data.data, {
+              topic,
+              complexity,
+              learningStyle
+            });
+            this.trackActivity('concept_breakdown', topic);
+          } else {
+            throw new Error('Invalid response from server');
+          }
+
+        } catch (error) {
+          console.error('Concept breakdown error:', error);
+          this.showNotification(`Error: ${error.message}`, 'error');
+        } finally {
+          this.setLoadingState(false);
+        }
+      }
+
+      renderConceptBreakdown(data, metadata) {
+        const resultsSection = document.getElementById('results-section');
+        const resultsContainer = document.getElementById('concept-results');
+
+        if (!resultsSection || !resultsContainer) return;
+
+        const html = this.generateBreakdownHTML(data, metadata);
+        resultsContainer.innerHTML = html;
+        resultsSection.classList.remove('hidden');
+
+        // Add animations
+        this.animateResultsAppearance();
+
+        // Scroll to results
+        resultsSection.scrollIntoView({ 
+          behavior: 'smooth', 
+          block: 'start' 
+        });
+
+        // Save to history
+        this.saveToHistory(data, metadata);
+      }
+
+      generateBreakdownHTML(data, metadata) {
+        return `
+          <div class="concept-breakdown glass-card">
+            <div class="breakdown-header" style="text-align: center; margin-bottom: 3rem;">
+              <h2 style="font-size: 2.5rem; margin-bottom: 1rem; background: var(--primary-gradient); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+                ${metadata.topic}
+              </h2>
+              <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+                <span class="interactive-badge">${metadata.complexity}</span>
+                <span class="interactive-badge">${metadata.learningStyle} Learner</span>
+                <span class="interactive-badge">AI-Powered</span>
+              </div>
+            </div>
+
+            ${this.renderSection('🎯 What It Means', data.topic_meaning)}
+            ${this.renderSection('💡 Why It Matters', data.why_it_matters)}
+            ${this.renderSection('🔍 Real-Life Analogy', data.real_life_analogy)}
+            ${this.renderListSection('🧩 Key Concepts', data.key_concepts)}
+            ${this.renderStepsSection('🚀 Step-by-Step Explanation', data.step_by_step_explanation)}
+            ${this.renderListSection('⚠️ Common Misconceptions', data.common_misconceptions)}
+            ${this.renderListSection('📋 Summary', data.summary)}
+            ${this.renderInteractiveSection('🎯 Suggested Next Topics', data.suggested_next_topics)}
+            ${this.renderListSection('💡 Learning Tips', data.learning_tips || [])}
+          </div>
+        `;
+      }
+
+      renderSection(title, content) {
+        if (!content) return '';
+        return `
+          <div class="concept-section">
+            <h3 class="section-title">${title}</h3>
+            <div class="section-content">
+              <p>${content}</p>
+            </div>
+          </div>
+        `;
+      }
+
+      renderListSection(title, items) {
+        if (!items || !Array.isArray(items) || items.length === 0) return '';
+        
+        const itemsHtml = items.map(item => `
+          <li style="margin: 0.5rem 0; padding: 0.5rem; background: var(--bg-tertiary); border-radius: 8px;">
+            ${item}
+          </li>
+        `).join('');
+        
+        return `
+          <div class="concept-section">
+            <h3 class="section-title">${title}</h3>
+            <ul style="list-style: none; padding: 0;">
+              ${itemsHtml}
+            </ul>
+          </div>
+        `;
+      }
+
+      renderStepsSection(title, steps) {
+        if (!steps) return '';
+        
+        let stepsHtml = '';
+        if (Array.isArray(steps)) {
+          stepsHtml = steps.map((step, index) => `
+            <div style="display: flex; gap: 1rem; margin: 1rem 0; padding: 1rem; background: var(--bg-secondary); border-radius: 12px;">
+              <div style="background: var(--primary); color: white; width: 2rem; height: 2rem; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold;">
+                ${index + 1}
+              </div>
+              <div style="flex: 1;">
+                ${step}
+              </div>
+            </div>
+          `).join('');
+        } else {
+          stepsHtml = `<p>${steps}</p>`;
+        }
+        
+        return `
+          <div class="concept-section">
+            <h3 class="section-title">${title}</h3>
+            ${stepsHtml}
+          </div>
+        `;
+      }
+
+      renderInteractiveSection(title, items) {
+        if (!items || !Array.isArray(items) || items.length === 0) return '';
+        
+        const itemsHtml = items.map(item => `
+          <span class="interactive-badge" onclick="app.quickBreakdown('${item.replace(/'/g, "\\'")}')">
+            ${item}
+          </span>
+        `).join('');
+        
+        return `
+          <div class="concept-section">
+            <h3 class="section-title">${title}</h3>
+            <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 1rem;">
+              ${itemsHtml}
+            </div>
+          </div>
+        `;
+      }
+
+      setLoadingState(isLoading) {
+        const submitButton = document.querySelector('.submit-button');
+        const buttonText = submitButton?.querySelector('.button-text');
+        const spinner = submitButton?.querySelector('.spinner');
+
+        if (isLoading) {
+          submitButton.disabled = true;
+          buttonText.style.display = 'none';
+          spinner.classList.remove('hidden');
+        } else {
+          submitButton.disabled = false;
+          buttonText.style.display = 'block';
+          spinner.classList.add('hidden');
+        }
+      }
+
+      quickBreakdown(topic) {
+        document.getElementById('topic-input').value = topic;
+        document.getElementById('concept-form').dispatchEvent(new Event('submit'));
+      }
+
+      // Additional enhanced methods would continue here...
+      setupVoiceRecognition() {
+        // Voice recognition implementation
+        if ('webkitSpeechRecognition' in window) {
+          this.state.voiceRecognition = new webkitSpeechRecognition();
+          this.state.voiceRecognition.continuous = false;
+          this.state.voiceRecognition.interimResults = false;
+          
+          this.state.voiceRecognition.onresult = (event) => {
+            const transcript = event.results[0][0].transcript;
+            document.getElementById('topic-input').value = transcript;
+            this.showNotification(`Heard: "${transcript}"`, 'success');
+          };
+        }
+      }
+
+      toggleVoiceInput() {
+        if (this.state.voiceRecognition) {
+          this.state.voiceRecognition.start();
+          this.showNotification('Listening... Speak now', 'info');
+        }
+      }
+
+      startSessionTimer() {
+        this.state.sessionStartTime = Date.now();
+        setInterval(() => {
+          const elapsed = Math.floor((Date.now() - this.state.sessionStartTime) / 1000);
+          const minutes = Math.floor(elapsed / 60);
+          const seconds = elapsed % 60;
+          const timerDisplay = document.getElementById('timer-display');
+          if (timerDisplay) {
+            timerDisplay.textContent = `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+          }
+        }, 1000);
+      }
+
+      setupTypewriterEffect() {
+        const typewriterText = document.querySelector('.typewriter-text');
+        if (typewriterText) {
+          const text = typewriterText.textContent;
+          typewriterText.style.width = '0';
+          typewriterText.style.overflow = 'hidden';
+          typewriterText.style.borderRight = '2px solid var(--primary)';
+          typewriterText.style.whiteSpace = 'nowrap';
+          
+          setTimeout(() => {
+            typewriterText.style.animation = `typewriter 2s steps(${text.length}) 1s 1 normal both`;
+          }, 1000);
+        }
+      }
+
+      animateResultsAppearance() {
+        const sections = document.querySelectorAll('.concept-section');
+        sections.forEach((section, index) => {
+          section.style.opacity = '0';
+          section.style.transform = 'translateY(20px)';
+          
+          setTimeout(() => {
+            section.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+            section.style.opacity = '1';
+            section.style.transform = 'translateY(0)';
+          }, index * 100);
+        });
+      }
+
+      showNotification(message, type = 'info') {
+        // Notification system implementation
+        const notification = document.createElement('div');
+        notification.className = `notification ${type}`;
+        notification.innerHTML = `
+          <div class="notification-content">
+            <span>${message}</span>
+            <button onclick="this.parentElement.parentElement.remove()">×</button>
+          </div>
+        `;
+        
+        document.body.appendChild(notification);
+        setTimeout(() => notification.remove(), 5000);
+      }
+
+      // Placeholder methods for additional functionality
+      toggleAssistant() { 
+        this.state.isAssistantOpen = !this.state.isAssistantOpen;
+        const window = document.getElementById('assistant-window');
+        window.classList.toggle('hidden');
+      }
+
+      sendAssistantMessage() {
+        const input = document.getElementById('assistant-input');
+        const message = input.value.trim();
+        if (message) {
+          // Handle assistant message
+          input.value = '';
+        }
+      }
+
+      handleTopicInput() {
+        // Real-time suggestions implementation
+      }
+
+      exportBreakdown() {
+        this.showNotification('Export feature coming soon!', 'info');
+      }
+
+      generateQuiz() {
+        this.showNotification('Quiz generation coming soon!', 'info');
+      }
+
+      saveToNotes() {
+        this.showNotification('Notes saving coming soon!', 'info');
+      }
+
+      shareBreakdown() {
+        this.showNotification('Share feature coming soon!', 'info');
+      }
+
+      trackActivity(type, topic) {
+        // Analytics tracking
+        console.log(`Tracked: ${type} for ${topic}`);
+      }
+
+      saveToHistory(data, metadata) {
+        // Save to local storage
+        const history = JSON.parse(localStorage.getItem('thinkwiseHistory') || '[]');
+        history.unshift({
+          id: Date.now(),
+          data,
+          metadata,
+          timestamp: new Date().toISOString()
+        });
+        
+        // Keep only last 50 items
+        if (history.length > 50) history.length = 50;
+        
+        localStorage.setItem('thinkwiseHistory', JSON.stringify(history));
+      }
+
+      loadUserPreferences() {
+        // Load user preferences from local storage
+        this.state.userPreferences = JSON.parse(localStorage.getItem('thinkwisePreferences') || '{}');
+      }
+    }
+
+    // Initialize the application
+    const app = new ThinkWiseApp();
+
+    // Make app globally available for interactive elements
+    window.app = app;
+  </script>
+</body>
+</html>

@@ -1,0 +1,659 @@
+2025-11-05 16:52:41,611 INFO werkzeug [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-11-05 16:52:41,611 INFO werkzeug [33mPress CTRL+C to quit[0m
+2025-11-05 16:52:48,719 INFO werkzeug 127.0.0.1 - - [05/Nov/2025 16:52:48] "[33mGET / HTTP/1.1[0m" 404 -
+2025-11-05 16:52:53,478 INFO werkzeug 127.0.0.1 - - [05/Nov/2025 16:52:53] "[33mGET / HTTP/1.1[0m" 404 -
+2025-11-05 16:52:53,982 INFO werkzeug 127.0.0.1 - - [05/Nov/2025 16:52:53] "[33mGET / HTTP/1.1[0m" 404 -
+2025-11-05 16:52:54,221 INFO werkzeug 127.0.0.1 - - [05/Nov/2025 16:52:54] "[33mGET / HTTP/1.1[0m" 404 -
+2025-11-05 16:53:05,124 INFO werkzeug 127.0.0.1 - - [05/Nov/2025 16:53:05] "[33mGET / HTTP/1.1[0m" 404 -
+2025-11-05 16:53:19,503 INFO werkzeug [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-11-05 16:53:19,503 INFO werkzeug [33mPress CTRL+C to quit[0m
+2025-11-05 16:53:23,119 INFO werkzeug 127.0.0.1 - - [05/Nov/2025 16:53:23] "[33mGET / HTTP/1.1[0m" 404 -
+2025-11-05 16:53:23,179 INFO werkzeug 127.0.0.1 - - [05/Nov/2025 16:53:23] "[33mGET / HTTP/1.1[0m" 404 -
+2025-11-05 16:56:14,093 INFO werkzeug [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-11-05 16:56:14,093 INFO werkzeug [33mPress CTRL+C to quit[0m
+2025-11-05 16:56:15,813 INFO werkzeug 127.0.0.1 - - [05/Nov/2025 16:56:15] "[33mGET / HTTP/1.1[0m" 404 -
+2025-11-05 16:58:04,263 INFO werkzeug [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-11-05 16:58:04,264 INFO werkzeug [33mPress CTRL+C to quit[0m
+2025-11-05 16:58:05,893 INFO werkzeug 127.0.0.1 - - [05/Nov/2025 16:58:05] "GET / HTTP/1.1" 200 -
+2025-11-05 16:58:05,907 INFO werkzeug 127.0.0.1 - - [05/Nov/2025 16:58:05] "[33mGET /style.css HTTP/1.1[0m" 404 -
+2025-11-05 16:58:05,909 INFO werkzeug 127.0.0.1 - - [05/Nov/2025 16:58:05] "[33mGET /js/theme-manager.js HTTP/1.1[0m" 404 -
+2025-11-05 16:58:05,909 INFO werkzeug 127.0.0.1 - - [05/Nov/2025 16:58:05] "[33mGET /js/chat-assistant.js HTTP/1.1[0m" 404 -
+2025-11-05 16:58:05,910 INFO werkzeug 127.0.0.1 - - [05/Nov/2025 16:58:05] "[33mGET /js/concept-breakdown.js HTTP/1.1[0m" 404 -
+2025-11-05 16:58:05,910 INFO werkzeug 127.0.0.1 - - [05/Nov/2025 16:58:05] "[33mGET /js/main.js HTTP/1.1[0m" 404 -
+2025-11-05 16:58:14,923 INFO werkzeug 127.0.0.1 - - [05/Nov/2025 16:58:14] "GET / HTTP/1.1" 200 -
+2025-11-05 16:58:14,935 INFO werkzeug 127.0.0.1 - - [05/Nov/2025 16:58:14] "[33mGET /style.css HTTP/1.1[0m" 404 -
+2025-11-05 16:58:14,937 INFO werkzeug 127.0.0.1 - - [05/Nov/2025 16:58:14] "[33mGET /js/theme-manager.js HTTP/1.1[0m" 404 -
+2025-11-05 16:58:14,945 INFO werkzeug 127.0.0.1 - - [05/Nov/2025 16:58:14] "[33mGET /js/chat-assistant.js HTTP/1.1[0m" 404 -
+2025-11-05 16:58:14,946 INFO werkzeug 127.0.0.1 - - [05/Nov/2025 16:58:14] "[33mGET /js/concept-breakdown.js HTTP/1.1[0m" 404 -
+2025-11-05 16:58:14,947 INFO werkzeug 127.0.0.1 - - [05/Nov/2025 16:58:14] "[33mGET /js/main.js HTTP/1.1[0m" 404 -
+2025-11-05 16:58:30,906 INFO werkzeug 127.0.0.1 - - [05/Nov/2025 16:58:30] "GET / HTTP/1.1" 200 -
+2025-11-05 16:58:30,916 INFO werkzeug 127.0.0.1 - - [05/Nov/2025 16:58:30] "[33mGET /style.css HTTP/1.1[0m" 404 -
+2025-11-05 16:58:30,923 INFO werkzeug 127.0.0.1 - - [05/Nov/2025 16:58:30] "[33mGET /js/theme-manager.js HTTP/1.1[0m" 404 -
+2025-11-05 16:58:30,924 INFO werkzeug 127.0.0.1 - - [05/Nov/2025 16:58:30] "[33mGET /js/chat-assistant.js HTTP/1.1[0m" 404 -
+2025-11-05 16:58:30,924 INFO werkzeug 127.0.0.1 - - [05/Nov/2025 16:58:30] "[33mGET /js/concept-breakdown.js HTTP/1.1[0m" 404 -
+2025-11-05 16:58:30,925 INFO werkzeug 127.0.0.1 - - [05/Nov/2025 16:58:30] "[33mGET /js/main.js HTTP/1.1[0m" 404 -
+2025-11-15 14:05:00,177 INFO werkzeug [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-11-15 14:05:00,177 INFO werkzeug [33mPress CTRL+C to quit[0m
+2025-11-15 14:05:03,024 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:05:03] "GET / HTTP/1.1" 200 -
+2025-11-15 14:05:03,036 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:05:03] "[33mGET /style.css HTTP/1.1[0m" 404 -
+2025-11-15 14:05:03,037 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:05:03] "[33mGET /js/theme-manager.js HTTP/1.1[0m" 404 -
+2025-11-15 14:05:03,037 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:05:03] "[33mGET /js/chat-assistant.js HTTP/1.1[0m" 404 -
+2025-11-15 14:05:03,038 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:05:03] "[33mGET /js/concept-breakdown.js HTTP/1.1[0m" 404 -
+2025-11-15 14:05:03,038 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:05:03] "[33mGET /js/main.js HTTP/1.1[0m" 404 -
+2025-11-15 14:05:03,190 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:05:03] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-11-15 14:05:16,216 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:05:16] "GET / HTTP/1.1" 200 -
+2025-11-15 14:05:16,237 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:05:16] "[33mGET /style.css HTTP/1.1[0m" 404 -
+2025-11-15 14:05:16,242 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:05:16] "[33mGET /js/theme-manager.js HTTP/1.1[0m" 404 -
+2025-11-15 14:05:16,243 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:05:16] "[33mGET /js/chat-assistant.js HTTP/1.1[0m" 404 -
+2025-11-15 14:05:16,243 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:05:16] "[33mGET /js/concept-breakdown.js HTTP/1.1[0m" 404 -
+2025-11-15 14:05:16,244 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:05:16] "[33mGET /js/main.js HTTP/1.1[0m" 404 -
+2025-11-15 14:10:32,193 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:10:32] "GET / HTTP/1.1" 200 -
+2025-11-15 14:10:32,205 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:10:32] "[33mGET /style.css HTTP/1.1[0m" 404 -
+2025-11-15 14:10:32,207 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:10:32] "[33mGET /js/theme-manager.js HTTP/1.1[0m" 404 -
+2025-11-15 14:10:32,207 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:10:32] "[33mGET /js/chat-assistant.js HTTP/1.1[0m" 404 -
+2025-11-15 14:10:32,208 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:10:32] "[33mGET /js/concept-breakdown.js HTTP/1.1[0m" 404 -
+2025-11-15 14:10:32,208 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:10:32] "[33mGET /js/main.js HTTP/1.1[0m" 404 -
+2025-11-15 14:10:34,224 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:10:34] "GET / HTTP/1.1" 200 -
+2025-11-15 14:10:34,234 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:10:34] "[33mGET /style.css HTTP/1.1[0m" 404 -
+2025-11-15 14:10:34,239 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:10:34] "[33mGET /js/theme-manager.js HTTP/1.1[0m" 404 -
+2025-11-15 14:10:34,239 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:10:34] "[33mGET /js/chat-assistant.js HTTP/1.1[0m" 404 -
+2025-11-15 14:10:34,240 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:10:34] "[33mGET /js/concept-breakdown.js HTTP/1.1[0m" 404 -
+2025-11-15 14:10:34,242 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:10:34] "[33mGET /js/main.js HTTP/1.1[0m" 404 -
+2025-11-15 14:10:34,887 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:10:34] "GET / HTTP/1.1" 200 -
+2025-11-15 14:10:34,901 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:10:34] "[33mGET /style.css HTTP/1.1[0m" 404 -
+2025-11-15 14:10:34,902 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:10:34] "[33mGET /js/theme-manager.js HTTP/1.1[0m" 404 -
+2025-11-15 14:10:34,903 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:10:34] "[33mGET /js/chat-assistant.js HTTP/1.1[0m" 404 -
+2025-11-15 14:10:34,904 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:10:34] "[33mGET /js/concept-breakdown.js HTTP/1.1[0m" 404 -
+2025-11-15 14:10:34,906 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:10:34] "[33mGET /js/main.js HTTP/1.1[0m" 404 -
+2025-11-15 14:10:35,079 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:10:35] "GET / HTTP/1.1" 200 -
+2025-11-15 14:10:35,094 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:10:35] "[33mGET /style.css HTTP/1.1[0m" 404 -
+2025-11-15 14:10:35,098 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:10:35] "[33mGET /js/theme-manager.js HTTP/1.1[0m" 404 -
+2025-11-15 14:10:35,098 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:10:35] "[33mGET /js/chat-assistant.js HTTP/1.1[0m" 404 -
+2025-11-15 14:10:35,099 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:10:35] "[33mGET /js/concept-breakdown.js HTTP/1.1[0m" 404 -
+2025-11-15 14:10:35,099 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:10:35] "[33mGET /js/main.js HTTP/1.1[0m" 404 -
+2025-11-15 14:10:35,263 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:10:35] "GET / HTTP/1.1" 200 -
+2025-11-15 14:10:35,278 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:10:35] "[33mGET /style.css HTTP/1.1[0m" 404 -
+2025-11-15 14:10:35,278 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:10:35] "[33mGET /js/theme-manager.js HTTP/1.1[0m" 404 -
+2025-11-15 14:10:35,279 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:10:35] "[33mGET /js/chat-assistant.js HTTP/1.1[0m" 404 -
+2025-11-15 14:10:35,280 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:10:35] "[33mGET /js/concept-breakdown.js HTTP/1.1[0m" 404 -
+2025-11-15 14:10:35,281 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:10:35] "[33mGET /js/main.js HTTP/1.1[0m" 404 -
+2025-11-15 14:10:35,839 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:10:35] "GET / HTTP/1.1" 200 -
+2025-11-15 14:10:35,853 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:10:35] "[33mGET /style.css HTTP/1.1[0m" 404 -
+2025-11-15 14:10:35,854 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:10:35] "[33mGET /js/theme-manager.js HTTP/1.1[0m" 404 -
+2025-11-15 14:10:35,855 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:10:35] "[33mGET /js/chat-assistant.js HTTP/1.1[0m" 404 -
+2025-11-15 14:10:35,856 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:10:35] "[33mGET /js/concept-breakdown.js HTTP/1.1[0m" 404 -
+2025-11-15 14:10:35,858 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:10:35] "[33mGET /js/main.js HTTP/1.1[0m" 404 -
+2025-11-15 14:10:58,591 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:10:58] "GET / HTTP/1.1" 200 -
+2025-11-15 14:10:58,618 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:10:58] "[33mGET /style.css HTTP/1.1[0m" 404 -
+2025-11-15 14:10:58,618 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:10:58] "[33mGET /js/theme-manager.js HTTP/1.1[0m" 404 -
+2025-11-15 14:10:58,619 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:10:58] "[33mGET /js/chat-assistant.js HTTP/1.1[0m" 404 -
+2025-11-15 14:10:58,619 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:10:58] "[33mGET /js/concept-breakdown.js HTTP/1.1[0m" 404 -
+2025-11-15 14:10:58,620 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:10:58] "[33mGET /js/main.js HTTP/1.1[0m" 404 -
+2025-11-15 14:11:00,436 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:11:00] "GET / HTTP/1.1" 200 -
+2025-11-15 14:11:00,448 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:11:00] "[33mGET /style.css HTTP/1.1[0m" 404 -
+2025-11-15 14:11:00,448 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:11:00] "[33mGET /js/theme-manager.js HTTP/1.1[0m" 404 -
+2025-11-15 14:11:00,449 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:11:00] "[33mGET /js/chat-assistant.js HTTP/1.1[0m" 404 -
+2025-11-15 14:11:00,451 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:11:00] "[33mGET /js/concept-breakdown.js HTTP/1.1[0m" 404 -
+2025-11-15 14:11:00,453 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:11:00] "[33mGET /js/main.js HTTP/1.1[0m" 404 -
+2025-11-15 14:11:11,241 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:11:11] "GET / HTTP/1.1" 200 -
+2025-11-15 14:11:11,253 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:11:11] "[33mGET /style.css HTTP/1.1[0m" 404 -
+2025-11-15 14:11:11,253 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:11:11] "[33mGET /js/theme-manager.js HTTP/1.1[0m" 404 -
+2025-11-15 14:11:11,254 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:11:11] "[33mGET /js/chat-assistant.js HTTP/1.1[0m" 404 -
+2025-11-15 14:11:11,255 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:11:11] "[33mGET /js/concept-breakdown.js HTTP/1.1[0m" 404 -
+2025-11-15 14:11:11,258 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:11:11] "[33mGET /js/main.js HTTP/1.1[0m" 404 -
+2025-11-15 14:13:57,597 INFO werkzeug [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-11-15 14:13:57,598 INFO werkzeug [33mPress CTRL+C to quit[0m
+2025-11-15 14:13:59,425 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:13:59] "GET / HTTP/1.1" 200 -
+2025-11-15 14:13:59,521 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:13:59] "GET /static/style.css HTTP/1.1" 200 -
+2025-11-15 14:13:59,537 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:13:59] "GET /static/script.js HTTP/1.1" 200 -
+2025-11-15 14:13:59,537 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:13:59] "GET /static/theme.js HTTP/1.1" 200 -
+2025-11-15 14:13:59,675 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:13:59] "[33mGET /static/favicon.ico HTTP/1.1[0m" 404 -
+2025-11-15 14:14:40,343 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:14:40] "GET / HTTP/1.1" 200 -
+2025-11-15 14:14:40,359 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:14:40] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-11-15 14:14:40,365 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:14:40] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+2025-11-15 14:14:40,365 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:14:40] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-11-15 14:14:52,520 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:14:52] "GET / HTTP/1.1" 200 -
+2025-11-15 14:14:52,532 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:14:52] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-11-15 14:14:52,537 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:14:52] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+2025-11-15 14:14:52,537 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:14:52] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-11-15 14:15:46,215 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:15:46] "GET / HTTP/1.1" 200 -
+2025-11-15 14:15:46,227 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:15:46] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-11-15 14:15:46,233 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:15:46] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+2025-11-15 14:15:46,233 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:15:46] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-11-15 14:15:47,333 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:15:47] "GET / HTTP/1.1" 200 -
+2025-11-15 14:15:47,344 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:15:47] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-11-15 14:15:47,348 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:15:47] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+2025-11-15 14:15:47,349 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:15:47] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-11-15 14:15:47,621 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:15:47] "GET / HTTP/1.1" 200 -
+2025-11-15 14:15:47,636 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:15:47] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-11-15 14:15:47,637 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:15:47] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+2025-11-15 14:15:47,637 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:15:47] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-11-15 14:15:52,055 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:15:52] "GET / HTTP/1.1" 200 -
+2025-11-15 14:15:52,067 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:15:52] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-11-15 14:15:52,071 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:15:52] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-11-15 14:15:52,072 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:15:52] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+2025-11-15 14:15:56,634 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:15:56] "GET / HTTP/1.1" 200 -
+2025-11-15 14:15:56,653 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:15:56] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-11-15 14:15:56,654 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:15:56] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+2025-11-15 14:15:56,654 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:15:56] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-11-15 14:15:59,904 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:15:59] "GET / HTTP/1.1" 200 -
+2025-11-15 14:15:59,918 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:15:59] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-11-15 14:15:59,922 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:15:59] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+2025-11-15 14:15:59,923 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:15:59] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-11-15 14:16:03,167 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:16:03] "GET /study/history HTTP/1.1" 200 -
+2025-11-15 14:16:03,179 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:16:03] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-11-15 14:16:17,364 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:16:17] "GET / HTTP/1.1" 200 -
+2025-11-15 14:16:17,377 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:16:17] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-11-15 14:16:17,383 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:16:17] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+2025-11-15 14:16:17,384 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:16:17] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-11-15 14:22:16,343 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:22:16] "GET / HTTP/1.1" 200 -
+2025-11-15 14:22:16,356 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:22:16] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-11-15 14:22:16,362 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:22:16] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+2025-11-15 14:22:16,386 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:22:16] "GET /static/script.js HTTP/1.1" 200 -
+2025-11-15 14:22:18,494 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:22:18] "GET / HTTP/1.1" 200 -
+2025-11-15 14:22:18,506 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:22:18] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-11-15 14:22:18,511 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:22:18] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+2025-11-15 14:22:18,512 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:22:18] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-11-15 14:22:27,989 ERROR root AI API Error: 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-11-15 14:22:27,989 ERROR root Concept breakdown error: Failed to generate concept breakdown
+2025-11-15 14:22:27,990 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:22:27] "[35m[1mPOST /api/v1/breakdown HTTP/1.1[0m" 500 -
+2025-11-15 14:22:30,916 ERROR root AI API Error: 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-11-15 14:22:30,917 ERROR root Concept breakdown error: Failed to generate concept breakdown
+2025-11-15 14:22:30,917 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:22:30] "[35m[1mPOST /api/v1/breakdown HTTP/1.1[0m" 500 -
+2025-11-15 14:22:41,252 ERROR root AI API Error: 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-11-15 14:22:41,252 ERROR root Concept breakdown error: Failed to generate concept breakdown
+2025-11-15 14:22:41,253 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:22:41] "[35m[1mPOST /api/v1/breakdown HTTP/1.1[0m" 500 -
+2025-11-15 14:22:45,055 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:22:45] "GET / HTTP/1.1" 200 -
+2025-11-15 14:22:45,066 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:22:45] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-11-15 14:22:45,070 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:22:45] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+2025-11-15 14:22:45,071 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:22:45] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-11-15 14:22:46,086 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:22:46] "GET / HTTP/1.1" 200 -
+2025-11-15 14:22:46,111 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:22:46] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-11-15 14:22:46,112 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:22:46] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+2025-11-15 14:22:46,112 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:22:46] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-11-15 14:22:46,495 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:22:46] "GET / HTTP/1.1" 200 -
+2025-11-15 14:22:46,506 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:22:46] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-11-15 14:22:46,511 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:22:46] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+2025-11-15 14:22:46,511 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:22:46] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-11-15 14:22:51,332 ERROR root AI API Error: 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-11-15 14:22:51,332 ERROR root Concept breakdown error: Failed to generate concept breakdown
+2025-11-15 14:22:51,333 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:22:51] "[35m[1mPOST /api/v1/breakdown HTTP/1.1[0m" 500 -
+2025-11-15 14:22:58,324 ERROR root AI API Error: 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-11-15 14:22:58,325 ERROR root Concept breakdown error: Failed to generate concept breakdown
+2025-11-15 14:22:58,325 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:22:58] "[35m[1mPOST /api/v1/breakdown HTTP/1.1[0m" 500 -
+2025-11-15 14:23:08,208 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:23:08] "GET /study/math HTTP/1.1" 200 -
+2025-11-15 14:23:08,223 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:23:08] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-11-15 14:23:14,360 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:23:14] "GET / HTTP/1.1" 200 -
+2025-11-15 14:23:14,376 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:23:14] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-11-15 14:23:14,382 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:23:14] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+2025-11-15 14:23:14,382 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:23:14] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-11-15 14:31:34,201 INFO werkzeug [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-11-15 14:31:34,201 INFO werkzeug [33mPress CTRL+C to quit[0m
+2025-11-15 14:31:35,613 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:31:35] "GET / HTTP/1.1" 200 -
+2025-11-15 14:31:35,724 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:31:35] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+2025-11-15 14:31:35,725 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:31:35] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-11-15 14:31:35,754 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:31:35] "GET /static/script.js HTTP/1.1" 200 -
+2025-11-15 14:31:42,010 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:31:42] "[33mGET /concept-breakdown HTTP/1.1[0m" 404 -
+2025-11-15 14:31:46,378 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:31:46] "[33mGET /api/v1/suggestions?q=Neural%20Network HTTP/1.1[0m" 404 -
+2025-11-15 14:31:48,069 ERROR root AI API Error: 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-11-15 14:31:48,069 ERROR root Concept breakdown error: Failed to generate concept breakdown
+2025-11-15 14:31:48,070 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:31:48] "[35m[1mPOST /api/v1/breakdown HTTP/1.1[0m" 500 -
+2025-11-15 14:31:50,080 ERROR root AI API Error: 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-11-15 14:31:50,080 ERROR root Concept breakdown error: Failed to generate concept breakdown
+2025-11-15 14:31:50,081 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:31:50] "[35m[1mPOST /api/v1/breakdown HTTP/1.1[0m" 500 -
+2025-11-15 14:31:54,092 ERROR root AI API Error: 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-11-15 14:31:54,092 ERROR root Concept breakdown error: Failed to generate concept breakdown
+2025-11-15 14:31:54,093 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:31:54] "[35m[1mPOST /api/v1/breakdown HTTP/1.1[0m" 500 -
+2025-11-15 14:32:02,099 ERROR root AI API Error: 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-11-15 14:32:02,099 ERROR root Concept breakdown error: Failed to generate concept breakdown
+2025-11-15 14:32:02,100 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:32:02] "[35m[1mPOST /api/v1/breakdown HTTP/1.1[0m" 500 -
+2025-11-15 14:32:11,677 ERROR root AI API Error: 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-11-15 14:32:11,677 ERROR root Concept breakdown error: Failed to generate concept breakdown
+2025-11-15 14:32:11,678 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:32:11] "[35m[1mPOST /api/v1/breakdown HTTP/1.1[0m" 500 -
+2025-11-15 14:32:13,690 ERROR root AI API Error: 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-11-15 14:32:13,690 ERROR root Concept breakdown error: Failed to generate concept breakdown
+2025-11-15 14:32:13,691 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:32:13] "[35m[1mPOST /api/v1/breakdown HTTP/1.1[0m" 500 -
+2025-11-15 14:32:17,953 ERROR root AI API Error: 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-11-15 14:32:17,953 ERROR root Concept breakdown error: Failed to generate concept breakdown
+2025-11-15 14:32:17,954 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:32:17] "[35m[1mPOST /api/v1/breakdown HTTP/1.1[0m" 500 -
+2025-11-15 14:32:26,956 ERROR root AI API Error: 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-11-15 14:32:26,956 ERROR root Concept breakdown error: Failed to generate concept breakdown
+2025-11-15 14:32:26,957 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:32:26] "[35m[1mPOST /api/v1/breakdown HTTP/1.1[0m" 500 -
+2025-11-15 14:32:45,125 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:32:45] "GET / HTTP/1.1" 200 -
+2025-11-15 14:32:45,140 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:32:45] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-11-15 14:32:45,140 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:32:45] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+2025-11-15 14:32:45,141 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:32:45] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-11-15 14:32:46,159 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:32:46] "GET / HTTP/1.1" 200 -
+2025-11-15 14:32:46,170 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:32:46] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-11-15 14:32:46,176 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:32:46] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-11-15 14:32:46,176 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:32:46] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+2025-11-15 14:32:46,791 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:32:46] "GET / HTTP/1.1" 200 -
+2025-11-15 14:32:46,804 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:32:46] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-11-15 14:32:46,809 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:32:46] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+2025-11-15 14:32:46,809 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:32:46] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-11-15 14:32:55,516 ERROR root AI API Error: 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-11-15 14:32:55,516 ERROR root Concept breakdown error: Failed to generate concept breakdown
+2025-11-15 14:32:55,517 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:32:55] "[35m[1mPOST /api/v1/breakdown HTTP/1.1[0m" 500 -
+2025-11-15 14:32:57,531 ERROR root AI API Error: 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-11-15 14:32:57,531 ERROR root Concept breakdown error: Failed to generate concept breakdown
+2025-11-15 14:32:57,532 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:32:57] "[35m[1mPOST /api/v1/breakdown HTTP/1.1[0m" 500 -
+2025-11-15 14:33:01,542 ERROR root AI API Error: 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-11-15 14:33:01,542 ERROR root Concept breakdown error: Failed to generate concept breakdown
+2025-11-15 14:33:01,543 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:33:01] "[35m[1mPOST /api/v1/breakdown HTTP/1.1[0m" 500 -
+2025-11-15 14:33:09,550 ERROR root AI API Error: 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-11-15 14:33:09,550 ERROR root Concept breakdown error: Failed to generate concept breakdown
+2025-11-15 14:33:09,551 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:33:09] "[35m[1mPOST /api/v1/breakdown HTTP/1.1[0m" 500 -
+2025-11-15 14:33:40,261 ERROR root AI API Error: 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-11-15 14:33:40,261 ERROR root Concept breakdown error: Failed to generate concept breakdown
+2025-11-15 14:33:40,262 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:33:40] "[35m[1mPOST /api/v1/breakdown HTTP/1.1[0m" 500 -
+2025-11-15 14:33:42,268 ERROR root AI API Error: 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-11-15 14:33:42,268 ERROR root Concept breakdown error: Failed to generate concept breakdown
+2025-11-15 14:33:42,269 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:33:42] "[35m[1mPOST /api/v1/breakdown HTTP/1.1[0m" 500 -
+2025-11-15 14:33:46,278 ERROR root AI API Error: 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-11-15 14:33:46,279 ERROR root Concept breakdown error: Failed to generate concept breakdown
+2025-11-15 14:33:46,279 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:33:46] "[35m[1mPOST /api/v1/breakdown HTTP/1.1[0m" 500 -
+2025-11-15 14:33:54,945 ERROR root AI API Error: 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-11-15 14:33:54,946 ERROR root Concept breakdown error: Failed to generate concept breakdown
+2025-11-15 14:33:54,946 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:33:54] "[35m[1mPOST /api/v1/breakdown HTTP/1.1[0m" 500 -
+2025-11-15 14:37:11,422 INFO werkzeug [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-11-15 14:37:11,422 INFO werkzeug [33mPress CTRL+C to quit[0m
+2025-11-15 14:37:11,424 INFO werkzeug  * Restarting with stat
+2025-11-15 14:37:12,616 WARNING werkzeug  * Debugger is active!
+2025-11-15 14:37:12,622 INFO werkzeug  * Debugger PIN: 747-681-882
+2025-11-15 14:37:12,777 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:37:12] "GET / HTTP/1.1" 200 -
+2025-11-15 14:37:12,850 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:37:12] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-11-15 14:37:12,861 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:37:12] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+2025-11-15 14:37:12,867 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:37:12] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-11-15 14:37:22,516 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:37:22] "GET / HTTP/1.1" 200 -
+2025-11-15 14:37:22,543 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:37:22] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-11-15 14:37:22,543 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:37:22] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+2025-11-15 14:37:22,544 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:37:22] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-11-15 14:37:29,142 INFO root OPENAI_API_KEY not set — returning mock breakdown (dev mode).
+2025-11-15 14:37:29,145 INFO root Tracking: concept_breakdown for topic: Neural Network
+2025-11-15 14:37:29,146 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:37:29] "POST /api/v1/breakdown HTTP/1.1" 200 -
+2025-11-15 14:37:31,164 INFO root OPENAI_API_KEY not set — returning mock breakdown (dev mode).
+2025-11-15 14:37:31,165 INFO root Tracking: concept_breakdown for topic: Neural Network
+2025-11-15 14:37:31,165 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:37:31] "POST /api/v1/breakdown HTTP/1.1" 200 -
+2025-11-15 14:37:35,172 INFO root OPENAI_API_KEY not set — returning mock breakdown (dev mode).
+2025-11-15 14:37:35,172 INFO root Tracking: concept_breakdown for topic: Neural Network
+2025-11-15 14:37:35,172 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:37:35] "POST /api/v1/breakdown HTTP/1.1" 200 -
+2025-11-15 14:37:43,179 INFO root OPENAI_API_KEY not set — returning mock breakdown (dev mode).
+2025-11-15 14:37:43,180 INFO root Tracking: concept_breakdown for topic: Neural Network
+2025-11-15 14:37:43,180 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:37:43] "POST /api/v1/breakdown HTTP/1.1" 200 -
+2025-11-15 14:37:47,229 INFO root OPENAI_API_KEY not set — returning mock breakdown (dev mode).
+2025-11-15 14:37:47,230 INFO root Tracking: concept_breakdown for topic: Neural Network
+2025-11-15 14:37:47,230 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:37:47] "POST /api/v1/breakdown HTTP/1.1" 200 -
+2025-11-15 14:37:49,242 INFO root OPENAI_API_KEY not set — returning mock breakdown (dev mode).
+2025-11-15 14:37:49,242 INFO root Tracking: concept_breakdown for topic: Neural Network
+2025-11-15 14:37:49,242 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:37:49] "POST /api/v1/breakdown HTTP/1.1" 200 -
+2025-11-15 14:37:53,248 INFO root OPENAI_API_KEY not set — returning mock breakdown (dev mode).
+2025-11-15 14:37:53,248 INFO root Tracking: concept_breakdown for topic: Neural Network
+2025-11-15 14:37:53,249 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:37:53] "POST /api/v1/breakdown HTTP/1.1" 200 -
+2025-11-15 14:38:01,942 INFO root OPENAI_API_KEY not set — returning mock breakdown (dev mode).
+2025-11-15 14:38:01,942 INFO root Tracking: concept_breakdown for topic: Neural Network
+2025-11-15 14:38:01,943 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 14:38:01] "POST /api/v1/breakdown HTTP/1.1" 200 -
+2025-11-15 14:41:58,818 INFO werkzeug  * Detected change in 'c:\\ThinkWise\\app.py', reloading
+2025-11-15 14:41:58,918 INFO werkzeug  * Restarting with stat
+2025-11-15 16:01:44,545 ERROR root Failed to create database tables: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-11-15 16:01:44,556 WARNING werkzeug  * Debugger is active!
+2025-11-15 16:01:44,563 INFO werkzeug  * Debugger PIN: 372-542-813
+2025-11-15 16:01:44,708 ERROR root Failed to create database tables: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-11-15 16:01:44,719 WARNING werkzeug  * Debugger is active!
+2025-11-15 16:01:44,726 INFO werkzeug  * Debugger PIN: 747-681-882
+2025-11-15 16:01:45,180 ERROR root Failed to create database tables: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-11-15 16:01:45,192 WARNING werkzeug  * Debugger is active!
+2025-11-15 16:01:45,198 INFO werkzeug  * Debugger PIN: 747-681-882
+2025-11-15 16:02:06,666 INFO werkzeug  * Detected change in 'c:\\ThinkWise\\app.py', reloading
+2025-11-15 16:02:07,307 INFO werkzeug  * Detected change in 'c:\\ThinkWise\\app.py', reloading
+2025-11-15 16:02:09,009 INFO root Database tables created successfully
+2025-11-15 16:02:09,020 WARNING werkzeug  * Debugger is active!
+2025-11-15 16:02:09,027 INFO werkzeug  * Debugger PIN: 372-542-813
+2025-11-15 16:02:09,479 INFO root Database tables created successfully
+2025-11-15 16:02:09,490 WARNING werkzeug  * Debugger is active!
+2025-11-15 16:02:09,496 INFO werkzeug  * Debugger PIN: 747-681-882
+2025-11-15 16:02:16,889 INFO root Database tables created successfully
+2025-11-15 16:02:16,916 INFO werkzeug [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.9:5000
+2025-11-15 16:02:16,916 INFO werkzeug [33mPress CTRL+C to quit[0m
+2025-11-15 16:02:16,919 INFO werkzeug  * Restarting with stat
+2025-11-15 16:02:18,793 INFO root Database tables created successfully
+2025-11-15 16:02:18,804 WARNING werkzeug  * Debugger is active!
+2025-11-15 16:02:18,810 INFO werkzeug  * Debugger PIN: 747-681-882
+2025-11-15 16:02:55,682 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 16:02:55] "GET /api/v1/health HTTP/1.1" 200 -
+2025-11-15 16:03:57,197 INFO werkzeug  * Detected change in 'c:\\ThinkWise\\app.py', reloading
+2025-11-15 16:03:57,626 INFO werkzeug  * Detected change in 'c:\\ThinkWise\\app.py', reloading
+2025-11-15 16:03:59,393 INFO root Database tables created successfully
+2025-11-15 16:03:59,404 WARNING werkzeug  * Debugger is active!
+2025-11-15 16:03:59,410 INFO werkzeug  * Debugger PIN: 747-681-882
+2025-11-15 16:03:59,762 INFO root Database tables created successfully
+2025-11-15 16:03:59,773 WARNING werkzeug  * Debugger is active!
+2025-11-15 16:03:59,779 INFO werkzeug  * Debugger PIN: 372-542-813
+2025-11-15 16:04:09,390 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 16:04:09] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-11-15 16:04:09,472 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 16:04:09] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-11-15 16:04:09,483 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 16:04:09] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-11-15 16:04:09,540 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 16:04:09] "GET /?__debugger__=yes&cmd=resource&f=console.png&s=W30stUZ4cqxsN8Zq8nHQ HTTP/1.1" 200 -
+2025-11-15 16:04:09,557 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 16:04:09] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-11-15 16:05:19,033 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 16:05:19] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-11-15 16:05:19,043 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 16:05:19] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-11-15 16:05:19,043 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 16:05:19] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-11-15 16:05:19,093 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 16:05:19] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png&s=W30stUZ4cqxsN8Zq8nHQ HTTP/1.1[0m" 304 -
+2025-11-15 16:05:26,935 INFO werkzeug  * Detected change in 'c:\\ThinkWise\\app.py', reloading
+2025-11-15 16:05:27,869 INFO werkzeug  * Detected change in 'c:\\ThinkWise\\app.py', reloading
+2025-11-15 16:05:33,159 INFO root Database tables created successfully
+2025-11-15 16:05:33,170 WARNING werkzeug  * Debugger is active!
+2025-11-15 16:05:33,176 INFO werkzeug  * Debugger PIN: 372-542-813
+2025-11-15 16:05:34,016 INFO root Database tables created successfully
+2025-11-15 16:05:34,027 WARNING werkzeug  * Debugger is active!
+2025-11-15 16:05:34,032 INFO werkzeug  * Debugger PIN: 747-681-882
+2025-11-15 16:06:49,531 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 16:06:49] "GET / HTTP/1.1" 200 -
+2025-11-15 16:07:04,542 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 16:07:04] "GET / HTTP/1.1" 200 -
+2025-11-15 16:07:04,627 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 16:07:04] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-11-15 16:07:04,629 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 16:07:04] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+2025-11-15 16:07:31,822 INFO root OPENAI_API_KEY not set — returning enhanced mock breakdown
+2025-11-15 16:07:31,822 WARNING root Failed to cache in database: type object 'CachedResponse' has no attribute 'query'
+2025-11-15 16:07:31,823 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 16:07:31] "POST /api/v1/breakdown HTTP/1.1" 200 -
+2025-11-15 16:08:01,405 INFO root OPENAI_API_KEY not set — returning enhanced mock breakdown
+2025-11-15 16:08:01,406 WARNING root Failed to cache in database: type object 'CachedResponse' has no attribute 'query'
+2025-11-15 16:08:01,406 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 16:08:01] "POST /api/v1/breakdown HTTP/1.1" 200 -
+2025-11-15 16:08:25,885 INFO root OPENAI_API_KEY not set — returning enhanced mock breakdown
+2025-11-15 16:08:25,885 WARNING root Failed to cache in database: type object 'CachedResponse' has no attribute 'query'
+2025-11-15 16:08:25,886 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 16:08:25] "POST /api/v1/breakdown HTTP/1.1" 200 -
+2025-11-15 16:08:25,924 INFO root OPENAI_API_KEY not set — returning enhanced mock breakdown
+2025-11-15 16:08:25,925 WARNING root Failed to cache in database: type object 'CachedResponse' has no attribute 'query'
+2025-11-15 16:08:25,925 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 16:08:25] "POST /api/v1/breakdown HTTP/1.1" 200 -
+2025-11-15 16:08:51,840 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 16:08:51] "GET / HTTP/1.1" 200 -
+2025-11-15 16:08:51,861 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 16:08:51] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-11-15 16:08:51,861 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 16:08:51] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+2025-11-15 16:08:56,200 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 16:08:56] "GET / HTTP/1.1" 200 -
+2025-11-15 16:08:56,216 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 16:08:56] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-11-15 16:08:56,219 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 16:08:56] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+2025-11-15 16:09:03,119 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 16:09:03] "GET / HTTP/1.1" 200 -
+2025-11-15 16:09:03,135 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 16:09:03] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-11-15 16:09:03,135 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 16:09:03] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+2025-11-15 16:09:21,918 INFO root OPENAI_API_KEY not set — returning enhanced mock breakdown
+2025-11-15 16:09:21,918 WARNING root Failed to cache in database: type object 'CachedResponse' has no attribute 'query'
+2025-11-15 16:09:21,918 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 16:09:21] "POST /api/v1/breakdown HTTP/1.1" 200 -
+2025-11-15 16:10:26,277 INFO root OPENAI_API_KEY not set — returning enhanced mock breakdown
+2025-11-15 16:10:26,277 WARNING root Failed to cache in database: type object 'CachedResponse' has no attribute 'query'
+2025-11-15 16:10:26,278 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 16:10:26] "POST /api/v1/breakdown HTTP/1.1" 200 -
+2025-11-15 16:10:37,146 INFO werkzeug  * Detected change in 'c:\\ThinkWise\\app.py', reloading
+2025-11-15 16:10:37,703 INFO werkzeug  * Detected change in 'c:\\ThinkWise\\app.py', reloading
+2025-11-15 16:10:43,197 INFO root Database tables created successfully
+2025-11-15 16:10:43,208 WARNING werkzeug  * Debugger is active!
+2025-11-15 16:10:43,214 INFO werkzeug  * Debugger PIN: 747-681-882
+2025-11-15 16:10:43,397 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 16:10:43] "GET / HTTP/1.1" 200 -
+2025-11-15 16:10:43,392 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 16:10:43] "GET / HTTP/1.1" 200 -
+2025-11-15 16:10:43,493 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 16:10:43] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-11-15 16:10:43,495 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 16:10:43] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+2025-11-15 16:10:43,874 INFO root Database tables created successfully
+2025-11-15 16:10:43,888 WARNING werkzeug  * Debugger is active!
+2025-11-15 16:10:43,894 INFO werkzeug  * Debugger PIN: 372-542-813
+2025-11-15 16:11:03,517 INFO root OPENAI_API_KEY not set — returning enhanced mock breakdown
+2025-11-15 16:11:03,517 WARNING root Failed to cache in database: type object 'CachedResponse' has no attribute 'query'
+2025-11-15 16:11:03,518 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 16:11:03] "POST /api/v1/breakdown HTTP/1.1" 200 -
+2025-11-15 16:17:15,468 INFO werkzeug  * Detected change in 'c:\\ThinkWise\\app.py', reloading
+2025-11-15 16:17:15,837 INFO werkzeug  * Detected change in 'c:\\ThinkWise\\app.py', reloading
+2025-11-15 16:17:21,587 INFO root Database tables created successfully
+2025-11-15 16:17:21,598 WARNING werkzeug  * Debugger is active!
+2025-11-15 16:17:21,604 INFO werkzeug  * Debugger PIN: 747-681-882
+2025-11-15 16:17:21,888 INFO root Database tables created successfully
+2025-11-15 16:17:21,899 WARNING werkzeug  * Debugger is active!
+2025-11-15 16:17:21,905 INFO werkzeug  * Debugger PIN: 372-542-813
+2025-11-15 16:17:25,257 INFO werkzeug  * Detected change in 'c:\\ThinkWise\\app.py', reloading
+2025-11-15 16:17:25,580 INFO werkzeug  * Detected change in 'c:\\ThinkWise\\app.py', reloading
+2025-11-15 16:17:31,400 INFO root Database tables created successfully
+2025-11-15 16:17:31,411 WARNING werkzeug  * Debugger is active!
+2025-11-15 16:17:31,416 INFO werkzeug  * Debugger PIN: 747-681-882
+2025-11-15 16:17:31,659 INFO root Database tables created successfully
+2025-11-15 16:17:31,670 WARNING werkzeug  * Debugger is active!
+2025-11-15 16:17:31,676 INFO werkzeug  * Debugger PIN: 372-542-813
+2025-11-15 16:18:14,257 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 16:18:14] "POST /api/v1/module/generate HTTP/1.1" 200 -
+2025-11-15 16:21:24,098 INFO werkzeug  * Detected change in 'c:\\ThinkWise\\app.py', reloading
+2025-11-15 16:21:24,116 INFO werkzeug  * Detected change in 'c:\\ThinkWise\\app.py', reloading
+2025-11-15 16:21:30,240 INFO root Database tables created successfully
+2025-11-15 16:21:30,251 WARNING werkzeug  * Debugger is active!
+2025-11-15 16:21:30,256 INFO werkzeug  * Debugger PIN: 372-542-813
+2025-11-15 16:21:30,262 INFO root Database tables created successfully
+2025-11-15 16:21:30,272 WARNING werkzeug  * Debugger is active!
+2025-11-15 16:21:30,278 INFO werkzeug  * Debugger PIN: 747-681-882
+2025-11-15 16:22:00,339 INFO werkzeug  * Detected change in 'c:\\ThinkWise\\app.py', reloading
+2025-11-15 16:22:00,350 INFO werkzeug  * Detected change in 'c:\\ThinkWise\\app.py', reloading
+2025-11-15 17:14:43,439 INFO root Database tables created successfully
+2025-11-15 17:14:43,497 INFO werkzeug [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.9:5000
+2025-11-15 17:14:43,497 INFO werkzeug [33mPress CTRL+C to quit[0m
+2025-11-15 17:14:43,498 INFO werkzeug  * Restarting with stat
+2025-11-15 17:14:49,089 INFO root Database tables created successfully
+2025-11-15 17:14:49,100 WARNING werkzeug  * Debugger is active!
+2025-11-15 17:14:49,106 INFO werkzeug  * Debugger PIN: 747-681-882
+2025-11-15 17:14:56,537 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 17:14:56] "GET / HTTP/1.1" 200 -
+2025-11-15 17:14:56,614 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 17:14:56] "[36mGET /static/theme.js HTTP/1.1[0m" 304 -
+2025-11-15 17:14:56,615 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 17:14:56] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-11-15 17:15:16,566 INFO root OPENAI_API_KEY not set — returning enhanced mock breakdown
+2025-11-15 17:15:16,566 WARNING root Failed to cache in database: type object 'CachedResponse' has no attribute 'query'
+2025-11-15 17:15:16,567 INFO werkzeug 127.0.0.1 - - [15/Nov/2025 17:15:16] "POST /api/v1/breakdown HTTP/1.1" 200 -
+2025-11-15 18:51:06,293 INFO werkzeug  * Detected change in 'c:\\ThinkWise\\app.py', reloading
+2025-11-15 18:51:06,646 INFO werkzeug  * Restarting with stat
+2025-11-15 18:51:14,627 INFO root Database tables created successfully
+2025-11-15 18:51:14,653 WARNING werkzeug  * Debugger is active!
+2025-11-15 18:51:14,668 INFO werkzeug  * Debugger PIN: 747-681-882
+2025-11-15 18:51:51,452 INFO root Database tables created successfully
+2025-11-15 18:51:51,516 INFO werkzeug [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.9:5000
+2025-11-15 18:51:51,517 INFO werkzeug [33mPress CTRL+C to quit[0m
+2025-11-15 18:51:51,520 INFO werkzeug  * Restarting with stat

@@ -1,0 +1,11 @@
+# Flask and web server components
+Flask
+Flask-Cors
+Flask-Limiter
+
+# AI and data validation
+openai
+pydantic
+
+# Environment variable management
+python-dotenv
